@@ -18,6 +18,14 @@ const projects = [
     tags: ["Java", "Web Technologies", "MySQL", "App Development"],
     image: foodSharingImg,
   },
+  {
+    title: "Automated Pill Dispenser",
+    subtitle: "AI-Based Smart Healthcare Device",
+    description:
+      "An AI-based smart healthcare device that automatically dispenses medicines at scheduled times with alerts. Uses microcontrollers, sensors, and AI to monitor usage patterns, ensure accurate dosage, and improve medication adherence for elderly patients.",
+    tags: ["AI/ML", "IoT", "Healthcare"],
+    image: null,
+  },
 ];
 
 const Projects = () => {
@@ -37,12 +45,18 @@ const Projects = () => {
               key={i}
               className="bg-card rounded-2xl overflow-hidden card-shadow hover-lift group"
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+              <div className="aspect-video overflow-hidden bg-secondary flex items-center justify-center">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="text-muted-foreground text-4xl font-heading font-bold opacity-30">
+                    {project.title.charAt(0)}
+                  </div>
+                )}
               </div>
               <div className="p-6 md:p-8">
                 <h3 className="font-heading font-bold text-xl text-foreground">{project.title}</h3>
