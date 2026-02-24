@@ -18,7 +18,7 @@ const Hero = () => {
           <p className="text-muted-foreground leading-relaxed max-w-lg text-sm md:text-base opacity-0 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             Passionate about building scalable, user-centric applications using Java, Python, and modern web technologies. Focused on AI-powered systems and socially impactful digital solutions.
           </p>
-          <div className="flex items-center gap-4 pt-1 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
+          <div className="flex flex-wrap items-center gap-3 pt-1 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
             <a
               href="#projects"
               className="inline-flex items-center px-7 py-2.5 bg-primary text-primary-foreground font-medium rounded-full hover:opacity-90 transition-opacity duration-200 text-sm"
@@ -30,6 +30,14 @@ const Hero = () => {
               className="inline-flex items-center px-7 py-2.5 border border-border text-foreground font-medium rounded-full hover:bg-secondary transition-colors duration-200 text-sm"
             >
               Contact Me
+            </a>
+            <a
+              href="/resume.pdf"
+              download
+              className="inline-flex items-center gap-2 px-7 py-2.5 border border-primary text-primary font-medium rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-200 text-sm"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              Resume
             </a>
           </div>
         </div>
