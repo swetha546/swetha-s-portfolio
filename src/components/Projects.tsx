@@ -1,5 +1,7 @@
 import awareDriveImg from "@/assets/project-aware-drive.jpg";
 import foodSharingImg from "@/assets/project-food-sharing.jpg";
+import pillDispenserImg from "@/assets/project-pill-dispenser.jpg";
+import emotionRecognitionImg from "@/assets/project-emotion-recognition.jpg";
 
 const projects = [
   {
@@ -24,7 +26,15 @@ const projects = [
     description:
       "An AI-based smart healthcare device that automatically dispenses medicines at scheduled times with alerts. Uses microcontrollers, sensors, and AI to monitor usage patterns, ensure accurate dosage, and improve medication adherence for elderly patients.",
     tags: ["AI/ML", "IoT", "Healthcare"],
-    image: null,
+    image: pillDispenserImg,
+  },
+  {
+    title: "Emotion Recognition and Analysis",
+    subtitle: "AI-Powered Emotion Detection System",
+    description:
+      "A technology that enables computers to detect and interpret human emotions from facial expressions, voice tone, text, or body language. Uses machine learning and deep learning techniques to analyze patterns and classify emotions such as happiness, sadness, anger, fear, or surprise. Widely used in customer service, healthcare, education, and human-computer interaction.",
+    tags: ["AI/ML", "Deep Learning", "Computer Vision", "NLP"],
+    image: emotionRecognitionImg,
   },
 ];
 
